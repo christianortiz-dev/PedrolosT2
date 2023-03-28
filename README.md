@@ -25,10 +25,16 @@ Clona el repositorio
   git clone https://github.com/christianortiz-dev/PedrolosT2
 ```
 
-Instala Xampp
+Instalar Xampp
 
 ```bash
-  Abre la el directorio en tu navegador
+  Instala Xampp 8.2.0.0 o superior
+```
+
+Copiar en directorio adecuado
+
+```bash
+  Copia la WEB en la carpeta htdocs en la raíz de Xampp
 ```
 
 ## Añadir usuarios
