@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'minecraft';
+    src: url('../fonts/minecraft.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.integrantes {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    transition: ease 1.3s;
+}
+.integranteindividual {
+    background-color: #1c1e2d;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 15%);
+    border: 1px solid #55587520;
+    transition: ease 0.2s;
+    width: 47%;
+}
+
+.integranteindividual p {
+    text-align: center;
+}
+
+.integranteindividual img {
+    transition: ease 0.4s;
+    cursor: pointer;
+}
+
+.imagen p {
+    background-color: #ffffff09;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: minecraft;
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    color: #FC54FC;
+    text-shadow: 2px 2px#290029;
+}
+.imagen p img{
+    width: 34px;
+}
+
+.integranteindividual:hover img, .integranteindividual:hover .imagen p {
+    filter: drop-shadow(0 0 10px #555875);
+}
+
+.integranteindividual:hover {
+    transform: scale(1.05);
+}
+
+.datos {
+    display: flex;
+    margin: auto;
+}
+
+table {
+    color: #555875 !important;
+    border-color:#555875 !important;
+    max-width: 200px;
+}
+
+th img {
+    border-radius: 5px;
+}
+
+table p {
+    word-wrap: break-word;
+}
+
+table th {
+    text-align: center;
+}
+
+table h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.integranteindividual:hover .datos table th img {    
+    filter: drop-shadow(0 0 0);
+}
+
+@media (max-width: 1200px) {    
+    .integrantes { 
+        flex: 1;
+    }
+    .integranteindividual {
+        margin: 15px auto;
+        width: 70%;
+    }
+    table {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 992px) {    
+    table {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {    
+    .integranteindividual {
+        flex-direction: column;
+    }
+
+    .inreverse{
+        flex-direction: column-reverse;
+    }
+
+    .imagen {
+        margin: auto;
+    }
+
+    table {
+        max-width: 80%;
+        margin: auto;
+    }
+}

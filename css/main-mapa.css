@@ -1,0 +1,60 @@
+#mapa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 15%);
+    border: 1px solid #55587520;
+    border-radius: 10px;
+}
+
+.mapa_f {
+    border-radius: 10px 0 0 10px;
+    width: 70%;
+    min-height: 420px;
+    cursor: pointer;
+}
+.mapa_t {
+    background-color: #1c1e2d;
+    border-radius: 0 10px 10px 0;
+    width: 30%;
+    display: flex;
+    align-items: center; 
+}
+
+.mapa_t div {
+    margin: auto;
+    width: 70%;
+}
+
+.mapa_t h2 {
+    color: white;
+    text-align: center;
+}
+
+.mapa_t p {
+    color: #777b9e;
+    text-align: center;
+}
+
+/* DISEÑO RESPONSIVE */
+
+@media (max-width: 992px) {    
+    #mapa {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1 1;
+        box-shadow: 0 5px 20px rgb(0 0 0 / 15%);
+    }
+    
+    .mapa_f {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .mapa_t {
+        padding-top: 20px;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+    }
+}
